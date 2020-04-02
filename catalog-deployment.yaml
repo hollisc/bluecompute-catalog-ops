@@ -15,7 +15,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: "catalog"  
+      app: "catalog"
   template:
     metadata:
       labels:
@@ -75,7 +75,7 @@ spec:
           value: http://inventory:8080
       containers:
       - name: "catalog"
-        image: "us.icr.io/devops-gse-poc/bluecompute-catalog:1.0.0"
+        image: "us.icr.io/devops-gse-poc/bluecopute-catalog:1.0.0"
         imagePullPolicy: "Always"
         volumeMounts:
         - mountPath: /spring-tmp
