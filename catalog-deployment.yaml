@@ -13,6 +13,9 @@ metadata:
     chart: catalog-0.6.0
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: "catalog"  
   template:
     metadata:
       labels:
