@@ -75,7 +75,7 @@ spec:
           value: http://inventory:8080
       containers:
       - name: "catalog"
-        image: "us.icr.io/devops-gse-poc/bluecopute-catalog:1.0.0"
+        image: "ibmcase/bluecompute-catalog:0.6.0"
         imagePullPolicy: "Always"
         volumeMounts:
         - mountPath: /spring-tmp
